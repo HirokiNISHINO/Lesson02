@@ -1,2 +1,2 @@
-# Lesson2
+# Lesson02
 KUT Compiler Course 2023
