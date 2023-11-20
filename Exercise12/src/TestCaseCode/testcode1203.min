@@ -1,0 +1,34 @@
+global int a;
+global int b;
+global boolean bt;
+global boolean bf;
+
+a = 10;
+b = 99;
+bt = true;
+bf = false;
+
+println(a == 10);
+println(a != 99);
+println();
+
+println(a == b);
+println(a != b);
+println();
+
+println(bt == true);
+println(bt != true);
+println();
+
+println(bt == bf);
+println(bt != bf);
+println();
+
+
+println(bt == 5 < 10);
+println(bt != 5 < 10);
+println();
+
+println(8 <= 8 == bf);
+println(8 <= 8 != bf);
+println();

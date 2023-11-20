@@ -1,0 +1,8 @@
+global boolean a;
+global boolean b;
+
+a = false;
+b = true;
+
+println(a);
+println(b);

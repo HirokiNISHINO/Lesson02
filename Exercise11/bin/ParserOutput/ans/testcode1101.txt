@@ -1,0 +1,24 @@
+Program:
+  GVarDec:a(int)
+  GVarDec:b(int)
+  Assignment:
+    Identifier:a
+    IntLiteral:10
+  Assignment:
+    Identifier:b
+    IntLiteral:20
+  PrintLn:
+    Identifier:a
+  PrintLn:
+    Identifier:b
+  Assignment:
+    Identifier:a
+    Assignment:
+      Identifier:b
+      AstBinOp:+
+        Identifier:a
+        Identifier:b
+  PrintLn:
+    Identifier:a
+  PrintLn:
+    Identifier:b

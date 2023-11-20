@@ -1,0 +1,2 @@
+Program:
+  GVarDec:a(int)

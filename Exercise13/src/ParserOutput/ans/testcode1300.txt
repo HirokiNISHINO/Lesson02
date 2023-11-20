@@ -1,0 +1,22 @@
+Program:
+  PrintLn:
+    AstUnaryOp:!
+      BooleanLiteral:true
+  PrintLn:
+    AstUnaryOp:!
+      BooleanLiteral:false
+  GVarDec: a(boolean)
+  Assignment:
+    Identifier:a
+    BooleanLiteral:true
+  PrintLn:
+    AstUnaryOp:!
+      Identifier:a
+  Assignment:
+    Identifier:a
+    AstBinOp:<
+      IntLiteral:5
+      IntLiteral:100
+  PrintLn:
+    AstUnaryOp:!
+      Identifier:a

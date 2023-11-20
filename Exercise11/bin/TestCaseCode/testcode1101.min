@@ -1,0 +1,12 @@
+global int a;
+global int b;
+
+a = 10;
+b = 20;
+
+println(a);
+println(b);
+
+a = b = a + b;
+println(a);
+println(b);

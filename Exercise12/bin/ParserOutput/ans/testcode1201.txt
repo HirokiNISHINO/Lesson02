@@ -1,0 +1,13 @@
+Program:
+  GVarDec: a(boolean)
+  GVarDec: b(boolean)
+  Assignment:
+    Identifier:a
+    BooleanLiteral:false
+  Assignment:
+    Identifier:b
+    BooleanLiteral:true
+  PrintLn:
+    Identifier:a
+  PrintLn:
+    Identifier:b

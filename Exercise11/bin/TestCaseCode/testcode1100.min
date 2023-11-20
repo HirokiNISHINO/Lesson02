@@ -1,0 +1,2 @@
+global int a;
+a = 9999;

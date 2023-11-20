@@ -1,0 +1,6 @@
+Program:
+  GVarDec:a(int)
+  Identifier:a
+  AstBinOp:+
+    Identifier:a
+    IntLiteral:1

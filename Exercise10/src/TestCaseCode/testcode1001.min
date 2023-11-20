@@ -1,0 +1,4 @@
+global int a;
+global int b;
+global int c;
+a * b / (c + 10);

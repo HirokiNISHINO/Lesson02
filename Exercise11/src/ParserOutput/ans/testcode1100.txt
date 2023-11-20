@@ -1,0 +1,5 @@
+Program:
+  GVarDec:a(int)
+  Assignment:
+    Identifier:a
+    IntLiteral:9999

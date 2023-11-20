@@ -1,0 +1,4 @@
+Program:
+  GVarDec:a(int)
+  GVarDec:ab(int)
+  GVarDec:hoge114514(int)

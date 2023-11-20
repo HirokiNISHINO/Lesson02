@@ -1,0 +1,10 @@
+println(!true);
+println(!false);
+
+global boolean a;
+
+a = true;
+println(!a);
+
+a = 5 < 100;
+println(!a);
