@@ -130,7 +130,8 @@ _main:
 	mov rax, 0
 	push rax
 	mov rax, 1
-	xor rax, 0x0000000000000001
+	xor rax, 1
+	and rax, 1
 	call print_boolean#
 	pop rbx
 	add rax, rbx
@@ -138,7 +139,8 @@ _main:
 	mov rax, 0
 	push rax
 	mov rax, 0
-	xor rax, 0x0000000000000001
+	xor rax, 1
+	and rax, 1
 	call print_boolean#
 	pop rbx
 	add rax, rbx
@@ -148,7 +150,8 @@ _main:
 	mov rax, 0
 	push rax
 	mov rax, [ rel global_variable#a]
-	xor rax, 0x0000000000000001
+	xor rax, 1
+	and rax, 1
 	call print_boolean#
 	pop rbx
 	add rax, rbx
@@ -170,7 +173,8 @@ cond_1_end:
 	mov rax, 0
 	push rax
 	mov rax, [ rel global_variable#a]
-	xor rax, 0x0000000000000001
+	xor rax, 1
+	and rax, 1
 	call print_boolean#
 	pop rbx
 	add rax, rbx
