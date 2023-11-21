@@ -39,9 +39,6 @@ public class AstUnaryOp extends AstNode
 	
 
 
-	/**
-	 *
-	 */
 	@Override
 	public void beforeCGEN(CodeGenerator gen) throws SemanticErrorException {
 		this.expr.beforeCGEN(gen);
@@ -57,21 +54,16 @@ public class AstUnaryOp extends AstNode
 			break;
 		
 		case '!':
-			if (Type.BOOLEAN.equals(etype)) {	
-				return;
-			}
+			//TODO: 以下に！演算子が適用される式の型がType.BOOLEANであることを確認するコードを追加せよ。
+			//TODO: 上の'-'のコードを参考にせよ。
 			break;
 		}
 		
-		throw new SemanticErrorException("Invalid Operation. the type:" + etype.getTypeNameString() 
-										+ " can not be performed the operation: '" + token.getLexeme());
+		throw new SemanticErrorException("Invalid Operation. the type:" + etype.getTypeNameString() + " can not be performed the operation: '" + token.getLexeme());
 	}
 
 
 
-	/**
-	 *
-	 */
 	@Override
 	public void cgen(CodeGenerator gen) {
 		
@@ -83,10 +75,7 @@ public class AstUnaryOp extends AstNode
 			
 
 		case '!':
-			expr.cgen(gen);
-			//boolean in this language is always 0 or 1. so this is okay.
-			gen.appendCode("xor rax, 1");
-			gen.appendCode("and rax, 1");
+			//TODO: ここにコードを追加せよ
 			break;
 			
 		default:
@@ -95,8 +84,6 @@ public class AstUnaryOp extends AstNode
 		
 		return;
 	}
-	
-	
 	
 
 	
